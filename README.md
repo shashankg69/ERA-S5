@@ -68,7 +68,7 @@ The provided code trains a neural network model on the MNIST dataset using PyTor
     - The code defines the neural network model architecture using the `Net` class from the model module.
     - The model is moved to the available device (GPU if CUDA is available, otherwise CPU).
     - A summary of the model architecture is printed using the `summary` function from the `torchsummary` module.
- 
+
  5. **Training Setup**:
     - The code sets up the optimizer (`Adam` optimizer), learning rate scheduler (step scheduler), loss criterion (`F.nll_loss`), and the number of epochs for training.
  
