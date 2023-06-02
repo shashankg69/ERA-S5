@@ -30,7 +30,7 @@ conda install jupyter
 ## Project Structure
  **The project has the following structure**:
 
-1. `S5.ipynb` : This is the main notebook where you execute the code. It imports functions and classes from other files and contains the main logic for training and testing the model.
+1. [`S5.ipynb`](https://github.com/Shashank-Gottumukkala/ERA/blob/main/S5.ipynb) : This is the main notebook where you execute the code. It imports functions and classes from other files and contains the main logic for training and testing the model.
 
 2. [`utils.py`](https://github.com/Shashank-Gottumukkala/ERA/blob/main/utils.py) : This file contains utility functions and data loading functions that are commonly used across different modules. It provides the following functionalities:
 
