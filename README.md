@@ -32,7 +32,7 @@ conda install jupyter
 
 1. `S5.ipynb` : This is the main notebook where you execute the code. It imports functions and classes from other files and contains the main logic for training and testing the model.
 
-2. `utils.py` : This file contains utility functions and data loading functions that are commonly used across different modules. It provides the following functionalities:
+2. [`utils.py`](https://github.com/Shashank-Gottumukkala/ERA/blob/main/utils.py) : This file contains utility functions and data loading functions that are commonly used across different modules. It provides the following functionalities:
 
    - `train_transforms` : A data transformation pipeline for the training data.
    - `test_transforms` : A data transformation pipeline for the test data.
@@ -40,7 +40,7 @@ conda install jupyter
    - `test` : A function for testing the model.
 
 
-3. `model.py` : This file contains the definitions of the neural network models. It provides the following classes:
+3. [`model.py`](https://github.com/Shashank-Gottumukkala/ERA/blob/main/model.py) : This file contains the definitions of the neural network models. It provides the following classes:
    - `Net`: Neural network model with a specific architecture. 
 
 
