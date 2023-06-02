@@ -13,12 +13,12 @@ This project demonstrates image classification on the MNIST dataset using PyTorc
 
 ## Install the Required Packages on your Environment
 
-For CUDA Enabled Devices:
+**For CUDA Enabled Devices**:
 ```shell
 conda install pytorch torchvision pytorch-cuda=11.8 -c pytorch -c nvidia
 conda install matplotlib tqdm
 ```
-For CPU Only Devices:
+**For CPU Only Devices**:
 ```shell
 conda install pytorch torchvision cpuonly -c pytorch
 conda install matplotlib tqdm
@@ -28,7 +28,7 @@ conda install matplotlib tqdm
 conda install jupyter
 ```
 ## Project Structure
-### The project has the following structure:
+ **The project has the following structure**:
 
 1. `S5.ipynb` : This is the main notebook where you execute the code. It imports functions and classes from other files and contains the main logic for training and testing the model.
 
@@ -49,28 +49,30 @@ conda install jupyter
 
 2. Execute the code cells in the notebook to train the model, evaluate it on the test set, and visualize the results.
 
+
+
 ## Code Explanation
 
 The provided code trains a neural network model on the MNIST dataset using PyTorch. It performs the following steps:
 
  1. Imports necessary libraries and modules, including PyTorch, torch.optim, utils, and model.
 
- 2. Checking CUDA Availability:
+ 2. **Checking CUDA Availability** :
     - The code checks if CUDA is available for GPU acceleration by calling `torch.cuda.is_available()` . The result is stored in the cuda variable.
  
- 3. Data Loading and Transformation:
+ 3. **Data Loading and Transformation**:
     - The code defines the data transformations for the training and test datasets using `train_transforms` and `test_transforms` from the `utils` module.
     - The MNIST dataset is loaded using these transformations, and data loaders are created for both the training and test datasets.
 
- 4. Model Definition:
+ 4. **Model Definition**:
     - The code defines the neural network model architecture using the `Net` class from the model module.
     - The model is moved to the available device (GPU if CUDA is available, otherwise CPU).
     - A summary of the model architecture is printed using the `summary` function from the `torchsummary` module.
  
- 5. Training Setup:
+ 5. **Training Setup**:
     - The code sets up the optimizer (`Adam` optimizer), learning rate scheduler (step scheduler), loss criterion (`F.nll_loss`), and the number of epochs for training.
  
- 6. Training Loop:
+ 6. **Training Loop**:
     - The code initiates the training loop for the specified number of epochs.
     - In each epoch, the `train` function from the `utils` module is called to train the model on the training data.
     - After training, the `test` function from the `utils` module is called to evaluate the model on the test data.
