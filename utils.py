@@ -3,11 +3,6 @@ from torchvision import datasets, transforms
 import torch.nn as nn
 import torch.nn.functional as F
 from tqdm import tqdm
-from model import train_transforms, test_transforms
-
-
-train_data = datasets.MNIST('../data', train=True, download=True, transform=train_transforms)
-test_data = datasets.MNIST('../data', train=False, download=True, transform=test_transforms)
 
 
 # Data to plot accuracy and loss graphs
