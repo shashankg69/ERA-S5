@@ -61,7 +61,7 @@ The provided code trains a neural network model on the MNIST dataset using PyTor
     - The code checks if CUDA is available for GPU acceleration by calling `torch.cuda.is_available()` . The result is stored in the cuda variable.
  
  3. **Data Loading and Transformation**:
-    - The code defines the data transformations for the training and test datasets using `train_transforms` and `test_transforms` from the `utils` module.
+    - The code defines the data transformations for the training and test datasets using `train_transforms` and `test_transforms`.
     - The MNIST dataset is loaded using these transformations, and data loaders are created for both the training and test datasets.
 
  4. **Model Definition**:
